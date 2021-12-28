@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    padding: 24px;
+align-self: center;
+border-radius: 16px;
+}
+
+.nftContainer{
+     position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.nftImage{
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.nftOverlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 16px;
+}
+
+.eye{
+  position: absolute;
+ align-self: center;
+  height: 30%;
+  width: 30%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 16px;
+}
+
+
+.nftContainer:hover .nftOverlay{
+    opacity: 0.6;
+}
+
+.nftContainer:hover .eye{
+    opacity: 1;
+}
+
+
+
+.eye {
+
+}
+
+.cardText{
+    padding: 16px 0;
+}
+.card h2{
+    width: 100% ;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    margin: 8px 0;
+     transition: .5s ease;
+}
+
+.card h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.card .description{
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    margin: 8px 0;
+}
+
+.time{
+    display: flex;
+        font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    flex-wrap: wrap;
+        align-items: center;
+
+}
+
+.timeLeft{
+       margin-left: 8px;
+}
+
+.balance {
+    color: hsl(178, 100%, 50%);
+      font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+ 
+}
+
+.balanceLeft{
+       margin-left: 8px;
+}
+
+.name{
+    text-decoration: none;
+    color: white;
+     transition: .5s ease;
+
+}
+
+.name:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid hsl(215, 51%, 70%) ;
+    width: 100%;
+    padding: 8px 0;
+      font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.userAvatar{
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.creationOf{
+    color:hsl(215, 51%, 70%) ;
+}
+
+.name{
+    margin-left: 5px;
+}
